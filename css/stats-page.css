@@ -13,9 +13,85 @@ h4 {
 
 #mapid {
     padding: 15px;
-    margin-top: 100px;
-    width: 800px; 
-    height: 600px; 
-    position: relative;
+    
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 900px;
+    height: 700px;
+    border: 1rem solid #ffffff;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 15px #aaaaaa;
+}
+
+
+#energy {
+    position: absolute;
+    top: 15%;
+    left: 1%;
+    width: 150px;
+    height: 40px;
+    border: 1rem solid #ffffff;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+
+#water {
+    
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    width: 150px;
+    height: 40px;
+    border: 1rem solid #ffffff;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+
+#travel {
+    
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    width: 150px;
+    height: 40px;
+    border: 1rem solid #ffffff;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+
+#energyCity {
+    position: absolute;
+    top: 15%;
+    left: 90%;
+    width: 150px;
+    height: 40px;
+    border: 1rem solid #ffffff;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+
+#waterCity {
+    
+    position: absolute;
+    top: 25%;
+    left: 1%;
+    width: 150px;
+    height: 40px;
+    border: 1rem solid #ffffff;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 5px #aaaaaa;
+}
+
+#travelCity {
+    
+    position: absolute;
+    top: 35%;
+    left: 1%;
+    width: 150px;
+    height: 40px;
+    border: 1rem solid #ffffff;
+    border-radius: 3rem;
+    box-shadow: 0px 0px 5px #aaaaaa;
 }
 

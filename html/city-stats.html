@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>City Stats</title>
     <link rel="stylesheet" href="../css/stats-page.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
    crossorigin=""/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script defer src="../javascript/patient_list.js"></script>
@@ -22,12 +25,12 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">TEAMNAME</a>
+                <a class="navbar-brand" style="font-family: 'Lora', serif;" href="#">Clima Civitas</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="home-stats.html">Home</a></li>
+                <li><a href="home-stats.html">Home</a></li>
                 <li><a href="personal-stats.html">Your Stats</a></li>
-                <li><a href="#">City Stats</a></li>
+                <li class="active"><a href="#">City Stats</a></li>
                 <li><a href="#">Country Stats</a></li>
                 <li><a href="#">Global Leaderboard</a></li>
                 <li><a href="../index.html">Log Out</a></li>
@@ -84,12 +87,68 @@
         </div>
     </div>
 </div>
+
+<div id="energy">
+    <i class="fas fa-car-battery fa-lg"></i>
+</div>
+
+<div id="water">
+    <i class="fas fa-bath fa-lg"></i>
+</div>
+
+<div id="travel">
+    <i class="fas fa-walking fa-lg"></i>
+</div>
+
+<div id="energyCity">
+    <i class="fas fa-car-battery fa-lg"></i>
+</div>
+
+<div id="waterCity">
+    <i class="fas fa-bath fa-lg"></i>
+</div>
+
+<div id="travelCity">
+    <i class="fas fa-walking fa-lg"></i>
+</div>
+
+<div id="progressCity">
+    <i class="fas fa-building"></i>
+</div>
+
+    
+
+    </body>
+</html>
+
+
 <script>
     
-    var mymap = L.map('mapid').setView([51.505, -0.09], 13);
-    
+    var mymap = L.map('mapid').setView([48.210420, 16.374303], 11);
+    /* var polygon = L.polygon([
+        [48.290548, 16.348468],
+        [48.280953, 16.369068],
+        [48.316125, 16.379367],
+        [48.318865, 16.434986],
+        [48.275012, 16.474124],
+        [48.265871, 16.516010],
+        [48.22, 16.377303],
+        [48.23, 16.379303]
+    ]).addTo(mymap); */
+
+    var circle = L.circle([48.210420, 16.374303], {
+    color: '#a0a0a0',
+    fillColor: '#f15',
+    fillOpacity: 0.1,
+    radius: 13000
+}).addTo(mymap);
+
+    //polygon.bindPopup("I am a polygon.");
+    circle.bindPopup("Vienna");
+        
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-        maxZoom: 18,
+        maxZoom: 11,
+        minZoom: 11,
         attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
                 '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
                 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -100,9 +159,3 @@
     
 </script>
     
-    
-    
-    
-
-</body>
-</html>

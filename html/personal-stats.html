@@ -15,11 +15,11 @@
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">TEAMNAME</a>
+                <a class="navbar-brand" style="font-family: 'Lora', serif;" href="#">Clima Civitas</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="home-stats.html">Home</a></li>
-                <li><a href="#">Your Stats</a></li>
+                <li><a href="home-stats.html">Home</a></li>
+                <li class="active"><a href="#">Your Stats</a></li>
                 <li><a href="city-stats.html">City Stats</a></li>
                 <li><a href="#">Country Stats</a></li>
                 <li><a href="#">Global Leaderboard</a></li>
@@ -31,36 +31,42 @@
     <br/>
     <br/>
     <br/>
-    <h5 style="padding: 5px">Nurse</h5>
+    <h2 style="padding: 5px">User Data</h2>
     <form>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="firstName">Username</label>
-                <input type="text" class="form-control" id="firstName" value="Erin">
+                <input type="text" class="form-control" id="firstName" value="Simeon">
             </div>
             <div class="form-group col-md-6">
                 <label for="Country">Country</label>
-                <input type="text" class="form-control" id="Country" value="Germany">
+                <input type="text" class="form-control" id="Country" value="Austria">
             </div>
         </div>
         <div class="form-group col-md-6">
             <label for="city">City</label>
-            <input type="text" class="form-control" id="city" value="Berlin">
+            <input type="text" class="form-control" id="city" value="Vienna">
         </div>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="inputState">State</label>
                 <select id="inputState" class="form-control">
                     <option selected>Choose...</option>
-                    <option>Berlin</option>
-                    <option>Hamburg</option>
-                    <option>Saarland</option>
+                    <option>Vienna</option>
+                    <option>Lower Austria</option>
+                    <option>Burgenland</option>
+                    <option>Upper Austria</option>
+                    <option>Salzburg</option>
+                    <option>Styria</option>
+                    <option>Tirol</option>
+                    <option>Carinthia</option>
+                    <option>Vorarlberg</option>
                 </select>
             </div>
         </div>
     </form>
 
-    <div style="padding: 5px"><strong>List of Patients:</strong></div>
+    <div style="padding: 5px"><h2>Footstep:</h2></div>
 
     <div style="padding: 20px">
         <table class="table table-bordered table-striped" id="patient_list">
